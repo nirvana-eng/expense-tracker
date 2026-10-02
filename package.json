@@ -1,0 +1,15 @@
+{
+  "name": "expense-tracker-pro",
+  "version": "1.0.0",
+  "description": "Full-stack Expense Tracker & Analyzer",
+  "scripts": {
+    "server": "cd server && node server.js",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "test": "cd server && npm test"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
